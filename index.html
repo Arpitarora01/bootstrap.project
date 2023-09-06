@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Portfolio Bootstrap</title>
+</head>
+
+<body>
+    <!-- Nav bar :- -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#myport">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#aboutme">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#form-sec">Contact Us</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Hero section :- -->
+    <div class="bg-primary text-white text-center p-5 fw-light fs-3" id="myport">
+        <h1 class="display-3">Welcome to My Portfolio</h1>
+        <p>I showcase my projects and skills here.</p>
+    </div>
+    <!-- About Me section :- -->
+    <!-- (py is to give padding on top and bottom both) -->
+    <section class="container py-5" id="aboutme">
+        <h2 class="text-center pb-4">About Me</h2>
+        <div class="row">
+            <img class="col-sm-12 mb-4 col-md-6 "
+                src="https://images.unsplash.com/photo-1501959181532-7d2a3c064642?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1793&q=80"
+                alt="image">
+            <p class="col-sm-12 col-md-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas felis
+                et luctus
+                elementum. Morbi
+                lacinia nisl id ex accumsan posuere. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci
+                luctus et ultrices posuere cubilia Curae; Donec elementum nunc at augue faucibus, vel fringilla sem
+                mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            </p>
+        </div>
+    </section>
+    <!--Portfolio section:-  -->
+    <section class="bg-light pt-5 pb-5" id="portfolio">
+        <div class="container">
+            <h2 class="text-center">Portfolio</h2>
+            <div class="row">
+                <div class="col-sm-12 mt-4 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
+                            alt="img">
+                        <div class="card-body">
+                            <h5>Project 1</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 mt-4 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                            alt="img">
+                        <div class="card-body">
+                            <h5>Project 2</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 mt-4 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+                            alt="img">
+                        <div class="card-body">
+                            <h5>Project 3</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Form section -->
+    <section class="container" id="form-sec">
+        <h2 class="pt-5 text-center">Contact</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 mx-auto d-flex flex-column  pb-4">
+                <label for="name" class="form-label d-block w-100 text-start mt-3 mb-0">Name</label>
+                <input type="text" id="name" class="form-control d-block w-100 text-start mt-3 mb-0"
+                    placeholder="Arpit">
+                <label for="lname" class="form-label d-block w-100 text-start mt-3 mb-0">Last Name</label>
+                <input type="text" id="lname" class="form-control d-block w-100 text-start mt-3 mb-0"
+                    placeholder="Arora">
+                <label for="email" class="form-label d-block w-100 text-start mt-3 mb-0">Email</label>
+                <input type="email" id="email" class="form-control d-block w-100 text-start mt-3 mb-0"
+                    placeholder="Arpitarora9646@gmail.com">
+                <label for="message" class="form-label d-block w-100 text-start mt-3 mb-0">Message</label>
+                <textarea id="message" class="form-control d-block w-100 text-start mt-3 mb-0"
+                    placeholder="Write your message here..." rows="5"></textarea>
+                <div class="d-flex">
+                    <button class="btn btn-primary my-4">Submit</button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- footer section:- -->
+    <footer class="bg-dark text-center text-white py-4">
+        © 2023 My Portfolio. All rights reserved.
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
